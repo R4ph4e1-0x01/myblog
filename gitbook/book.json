@@ -1,0 +1,125 @@
+{
+    "title": "R4ph4e1 的知识库",
+    "author": "R4ph4e1",
+    "description": "工作许久，发现“好记性不如烂笔头”太有道理。但各种经验和想法都记录下来之后还需提炼回顾，故新开此博客。",
+    "theme-default":
+    {
+        "showLevel": true
+    },
+    "plugins":
+    [
+        "splitter",
+        "hide-element",
+        "code",
+        "theme-d4t",
+        "-lunr",
+        "-search",
+        "-sharing",
+        "search-pro-fixed",
+        "-highlight",
+        "chapter-fold",
+        "expandable-chapters",
+        "lightbox",
+        "donate",
+        "tbfed-pagefooter",
+        "github",
+        "flexible-alerts",
+        "prism",
+        "back-to-top-button",
+        "auto-scroll-table",
+        "summary"
+    ],
+    "variables":
+    {
+        "d4t":
+        {
+            "nav":
+            [
+            ]
+        }
+    },
+    "pluginsConfig":
+    {
+        "hide-element":
+        {
+            "elements":
+            [
+                ".gitbook-link",
+                ".title",
+                ".treeview__copyright",
+                ".treeview__main-title"
+            ]
+        },
+        "d4t":
+        {
+            "search-placeholder": "请输入关键字搜索",
+            "logo": "/README.assets/logo.svg",
+            "favicon": "/README.assets/favicon.ico"
+        },
+        "donate":
+        {
+            "wechat": "/README.assets/gzh_0.png",
+            "alipay": "/README.assets/gzh_1.png",
+            "title": "",
+            "button": "支持作者",
+            "alipayText": "点点广告🙏",
+            "wechatText": "关闭Adblock"
+        },
+        "tbfed-pagefooter":
+        {
+            "copyright": "Copyright &copy R4ph4e1 2023",
+            "modify_label": "该文章修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github":
+        {
+            "url": "https://github.com/R4ph4e1-0x01"
+        },
+        "flexible-alerts":
+        {
+            "style": "callout",
+            "comment":
+            {
+                "label": "Comment",
+                "icon": "fa fa-comments",
+                "className": "info"
+            }
+        },
+        "prism":
+        {
+            "css":
+            [
+                "prismjs/themes/prism-tomorrow.css"
+            ],
+            "lang":
+            {
+                "flow": "typescript",
+                "shell": "bash"
+            },
+            "ignore":
+            [
+                "mermaid",
+                "eval-js",
+                "ascii",
+                "result",
+                "manifest",
+                "payload",
+                "google",
+                "tree",
+                "java_out",
+                "log4j2",
+                "jsp",
+                "class",
+                "Exception",
+                "stack",
+                "c#",
+                "xml-dtd",
+                "C++",
+                "twig",
+                "jinja2",
+                "exception",
+                "tpl"
+            ]
+        }
+    }
+}
